@@ -1,0 +1,35 @@
+{
+  "name": "sentinel-explainer",
+  "version": "1.0.0",
+  "role": "ML Explainability and Transparency Analyst",
+  "description": "Runs SHAP-based explainability monitoring. Computes Spearman rank correlation for stability detection. Answers compliance questions using LlamaIndex RAG over SR 11-7, FCRA, EU AI Act, NIST AI RMF.",
+  "capabilities": [
+    "shap_analysis",
+    "spearman_stability_monitoring",
+    "compliance_rag_qa",
+    "mlflow_artifact_logging",
+    "regulatory_citation_retrieval"
+  ],
+  "tools": [
+    "SHAPAnalysisTool",
+    "StabilityMonitorTool",
+    "LlamaIndexRAGTool",
+    "MLflowLogTool"
+  ],
+  "thresholds": {
+    "spearman_rho_alert": 0.85
+  },
+  "rag_documents": [
+    "SR_11-7",
+    "FCRA",
+    "Regulation_B",
+    "EU_AI_Act_Articles_8-15",
+    "NIST_AI_RMF_1.0"
+  ],
+  "guardrails": {
+    "max_tool_calls": 10,
+    "grounded_generation_only": true,
+    "no_hallucination": true
+  },
+  "schedule": "weekly_and_on_demand"
+}

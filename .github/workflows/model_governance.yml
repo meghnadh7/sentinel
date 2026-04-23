@@ -1,0 +1,76 @@
+name: Model Governance Gate
+
+on:
+  workflow_dispatch:
+    inputs:
+      model_id:
+        description: "Model ID to audit"
+        required: true
+        default: "model-advisor-v2"
+  schedule:
+    - cron: "0 6 * * *"  # Daily at 6am UTC
+
+jobs:
+  governance-check:
+    runs-on: ubuntu-latest
+    services:
+      mysql:
+        image: mysql:8.0
+        env:
+          MYSQL_ROOT_PASSWORD: root_sentinel
+          MYSQL_DATABASE: sentinel_db
+          MYSQL_USER: sentinel
+          MYSQL_PASSWORD: sentinel_dev
+        ports:
+          - 3306:3306
+        options: --health-cmd="mysqladmin ping -h localhost -u sentinel -psentinel_dev" --health-interval=10s --health-timeout=5s --health-retries=5
+      redis:
+        image: redis:7-alpine
+        ports:
+          - 6379:6379
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -e ".[dev]"
+
+      - name: Run governance gate check
+        env:
+          MYSQL_HOST: localhost
+          MYSQL_USER: sentinel
+          MYSQL_PASSWORD: sentinel_dev
+          MYSQL_DATABASE: sentinel_db
+          REDIS_URL: redis://localhost:6379
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          USE_LOCAL_EMBEDDINGS: "true"
+        run: |
+          python -c "
+          import asyncio
+          from sentinel.compliance.gates import GovernanceGateChecker
+
+          async def main():
+              checker = GovernanceGateChecker()
+              model_id = '${{ github.event.inputs.model_id }}' or 'model-advisor-v2'
+              result = await checker.evaluate_model(model_id)
+              print(result.to_dict())
+              if result.promotion_blocked:
+                  print('GOVERNANCE GATE FAILED — promotion blocked')
+                  exit(1)
+              print('All governance gates passed')
+
+          asyncio.run(main())
+          "
+
+      - name: Verify audit chain integrity
+        env:
+          MYSQL_HOST: localhost
+          MYSQL_USER: sentinel
+          MYSQL_PASSWORD: sentinel_dev
+          MYSQL_DATABASE: sentinel_db
+        run: python scripts/verify_audit_chain.py

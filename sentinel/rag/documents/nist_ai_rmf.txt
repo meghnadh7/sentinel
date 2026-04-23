@@ -1,0 +1,203 @@
+NIST AI RISK MANAGEMENT FRAMEWORK (AI RMF 1.0)
+National Institute of Standards and Technology — January 2023
+
+INTRODUCTION
+
+The NIST AI RMF is intended to offer a resource to the broad AI community — including
+AI developers, users, evaluators, and others — for improving the ability to incorporate
+trustworthiness considerations into the design, development, use, and evaluation of AI
+products, services, and systems.
+
+THE FOUR CORE FUNCTIONS
+
+GOVERN — Cultivate and Implement AI Risk Management Culture
+
+GOVERN 1: POLICIES, PROCESSES, PROCEDURES, AND PRACTICES
+
+GOVERN 1.1: Organizational policies are in place to address AI risks and benefits.
+GOVERN 1.2: Mechanisms are in place to inventory AI systems.
+GOVERN 1.3: Organizational teams are committed to a culture that considers and communicates
+            AI risk and creates and maintains AI documentation.
+GOVERN 1.4: Organizational teams are committed to and model the imperative of AI safety.
+GOVERN 1.5: Organizational policies and practices are in place to define and differentiate
+            roles for those involved in the various activities of the AI lifecycle.
+GOVERN 1.6: Policies and procedures are in place to address AI risks and benefits arising
+            from third-party software and data and other supply chain issues.
+GOVERN 1.7: Processes and procedures are in place for decommissioning and phasing out
+            AI systems safely and in a manner that does not increase risks or decrease
+            the organization's trustworthiness.
+
+GOVERN 2: ACCOUNTABILITY
+
+GOVERN 2.1: Roles and responsibilities and lines of communication related to mapping,
+            measuring, and managing AI risks are documented and are clear to individuals
+            and teams throughout the organization.
+GOVERN 2.2: The organization's personnel and partners receive AI risk management training
+            to enable them to perform their duties and responsibilities consistent with
+            related policies, procedures, and agreements.
+
+GOVERN 3: TEAM CULTURE
+
+GOVERN 3.1: Decision-making related to mapping, measuring, and managing AI risks includes
+            input from diverse teams with varied perspectives and relevant domain expertise.
+GOVERN 3.2: Teams are committed to a culture of equality and inclusion.
+
+GOVERN 4: ORGANIZATIONAL TEAMS
+
+GOVERN 4.1: Organizational policies and practices are in place to foster a critical
+            thinking and safety-first mindset in the design, development, deployment,
+            and uses of AI systems to minimize potential negative impacts.
+GOVERN 4.2: Organizational teams document the risks and potential impacts of AI technologies.
+
+GOVERN 5: ORGANIZATIONAL RISK POLICIES
+
+GOVERN 5.1: Organizational policies and practices are in place to collect, consider, and
+            prioritize the development of AI systems that are aligned with human values.
+GOVERN 5.2: Organizational teams are committed to and implement processes enabling regular
+            engagement of diverse communities and stakeholders.
+
+GOVERN 6: POLICIES AND PROCESSES FOR AI RISK
+
+GOVERN 6.1: Policies and procedures are in place to address risks and benefits of
+            organizational AI deployment.
+GOVERN 6.2: Contingency processes are in place to handle failures or incidents in AI systems.
+
+MAP — Categorize and Prioritize AI Risks
+
+MAP 1: CONTEXT IS ESTABLISHED
+
+MAP 1.1: Context is established for the AI risk assessment, including the intended and
+         unintended uses of AI systems.
+MAP 1.2: Interdisciplinary AI actors, users, and other stakeholders are identified and
+         their roles, responsibilities, and potential impacts are documented.
+MAP 1.3: The business value or context in which the AI system will be used is identified.
+MAP 1.4: The team that developed or deployed the AI system is identified.
+MAP 1.5: Organizational risk tolerance is determined and documented.
+MAP 1.6: Risks or other undesirable impacts of the AI system to individuals, groups,
+         communities, organizations, and society are identified.
+
+MAP 2: SCIENTIFIC UNDERSTANDING OF IMPACTS IS ENHANCED
+
+MAP 2.1: Scientific findings related to AI risk over the technology's lifecycle are
+         reviewed and incorporated by the team.
+MAP 2.2: Scientific understanding of the AI lifecycle and its risks informs organizational
+         policies, processes, and practices.
+MAP 2.3: AI system risks and benefits attributable to third-party software, data,
+         algorithms, models, or human resources are mapped and communicated.
+
+MAP 3: AI RISKS AND BENEFITS ARE MAPPED FOR ORGANIZATIONAL USE
+
+MAP 3.1: Potential benefits of intended AI system deployment are examined and documented.
+MAP 3.2: AI system functionality and behavior are evaluated to determine whether they meet
+         intended goals and whether unintended functionality or behaviors are present.
+MAP 3.3: AI system risks and benefits attributable to bias, fairness, and representativeness
+         are mapped.
+MAP 3.4: AI system risks and benefits attributable to explainability and interpretability
+         are mapped.
+MAP 3.5: AI system risks and benefits attributable to reliability and safety are mapped.
+
+MAP 4: RISKS ARE PRIORITIZED BASED ON IMPACT AND LIKELIHOOD
+
+MAP 4.1: Risks are prioritized based on their impacts to individuals and communities,
+         as well as the organization and broader society.
+MAP 4.2: Risk levels are documented.
+
+MAP 5: IDENTIFIED AI RISKS ARE MAPPED TO ORGANIZATIONAL PRIORITIES
+
+MAP 5.1: Likelihood of the AI risk being realized is estimated.
+MAP 5.2: Practices and personnel for supporting AI risk identification are in place.
+MAP 5.3: Interdisciplinary AI actors, users, and other stakeholders are identified and
+         their roles and responsibilities regarding AI risk are documented.
+
+MEASURE — Analyze and Assess AI Risks
+
+MEASURE 1: APPROACHES ARE IDENTIFIED AND SELECTED
+
+MEASURE 1.1: Approaches and methods for measuring the identified AI risks are identified
+             and prioritized, with the goal of making them actionable.
+MEASURE 1.2: Assessments and plans are in place to regularly test, calibrate, and track
+             AI performance metrics and outcomes.
+MEASURE 1.3: Internal experts who did not serve as front-line developers are involved
+             in assessing AI risks.
+
+MEASURE 2: AI SYSTEMS ARE EVALUATED FOR TRUSTWORTHY CHARACTERISTICS
+
+MEASURE 2.1: Test sets, metrics, and details about the tools used during test and evaluation,
+             validation, and verification are documented.
+MEASURE 2.2: Evaluations involving human subjects are protected and conducted in accordance
+             with applicable ethics guidelines.
+MEASURE 2.3: AI system performance or assurance criteria are measured qualitatively or
+             quantitatively and documented.
+MEASURE 2.4: The functionality and behavior of the AI system and its components — as
+             identified in the MAP function — are monitored when in production.
+MEASURE 2.5: The AI system to be deployed undergoes routine testing and validation.
+MEASURE 2.6: The risks or other potential impacts of the AI system are examined across
+             the AI lifecycle.
+MEASURE 2.7: AI system security and resilience — such as adversarial testing — are
+             evaluated and documented.
+MEASURE 2.8: Risks associated with transparency and accountability are examined and documented.
+MEASURE 2.9: Privacy risk of the AI system — as identified in the MAP function — is
+             examined and documented.
+MEASURE 2.10: Privacy risk of the AI system — as identified in the MAP function — is
+              examined and documented.
+MEASURE 2.11: Fairness and bias — as identified in the MAP function — is evaluated for
+              impacts on individuals, groups, and the broader society.
+MEASURE 2.12: Environmental impact and sustainability of AI model development and operation
+              is measured.
+MEASURE 2.13: Effectiveness of the employed TEVV metrics and processes in the context of
+              the AI lifecycle stage is evaluated and documented.
+
+MEASURE 3: AI RISKS ARE TRACKED OVER TIME
+
+MEASURE 3.1: Approaches, personnel, and documentation are in place to regularly identify
+             and track existing, unanticipated, and emergent AI risks.
+MEASURE 3.2: Risk tracking approaches are considered for settings where AI risks are difficult
+             to assess using currently available measurement techniques or approaches.
+MEASURE 3.3: Feedback processes for end users and impacted communities to report problems
+             and appeal system outcomes are established and integrated into AI system evaluation metrics.
+
+MEASURE 4: FEEDBACK IS INCORPORATED INTO AI RISK MANAGEMENT PRACTICES
+
+MEASURE 4.1: Measurement approaches for identifying AI risks are connected to deployment
+             context(s) and informed through consultation with domain experts and other
+             end users.
+MEASURE 4.2: Measurement results inform iterative improvements to the AI system, including
+             by informing current and future deployment decisions.
+
+MANAGE — Prioritize and Address AI Risks
+
+MANAGE 1: AI RISKS BASED ON ASSESSMENTS ARE PRIORITIZED, RESPONDED TO, AND MANAGED
+
+MANAGE 1.1: A determination is made as to whether the AI system achieves its intended
+            purpose and whether it causes harm.
+MANAGE 1.2: Treatments, responses, and recovery plans are developed and communicated.
+MANAGE 1.3: Responses to the AI risks deemed high priority, as identified by the MAP
+            function, are developed, planned, and documented.
+MANAGE 1.4: Negative residual risks (defined as the sum of all unmitigated risks) to
+            both downstream acquirers of AI systems and end users are documented.
+
+MANAGE 2: STRATEGIES TO MAXIMIZE BENEFITS AND MINIMIZE NEGATIVE IMPACTS
+
+MANAGE 2.1: Resources required to manage AI risks are taken into account — along with
+            viable non-AI alternatives — to reduce the magnitude or likelihood of
+            potential impacts.
+MANAGE 2.2: Mechanisms are in place and applied to neutralize or offset harms from
+            incidents or errors.
+MANAGE 2.3: Procedures are followed to respond to and recover from any incidents or
+            errors.
+MANAGE 2.4: Mechanisms are in place and applied to sustain the value of deployed AI
+            systems throughout their lifecycle.
+
+MANAGE 3: AI RISKS AND BENEFITS ARE DOCUMENTED
+
+MANAGE 3.1: AI risks and benefits are documented and communicated to relevant AI actors.
+MANAGE 3.2: Post-deployment AI system monitoring plans are implemented, including
+            mechanisms for capturing and evaluating input from users and other relevant
+            AI actors.
+
+MANAGE 4: RISK IS MANAGED ACROSS THE ORGANIZATION
+
+MANAGE 4.1: Post-deployment AI system monitoring plans are in place and include
+            mechanisms for capturing and evaluating input from users.
+MANAGE 4.2: Procedures are followed to respond to and recover from incidents and errors
+            from AI system operation.

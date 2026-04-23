@@ -1,0 +1,72 @@
+FAIR CREDIT REPORTING ACT (FCRA)
+15 U.S.C. §§ 1681 et seq. — Relevant Provisions for AI/ML Financial Matching
+
+SECTION 601: PURPOSE
+
+The purpose of the FCRA is to require that consumer reporting agencies adopt reasonable
+procedures for meeting the needs of commerce for consumer credit, personnel, insurance,
+and other information in a manner which is fair and equitable to the consumer, with regard
+to the confidentiality, accuracy, relevancy, and proper utilization of such information.
+
+SECTION 604: PERMISSIBLE PURPOSES OF CONSUMER REPORTS
+
+A consumer reporting agency may furnish a consumer report under the following circumstances:
+(a) In accordance with the written instructions of the consumer
+(b) To a person which it has reason to believe intends to use the information in connection
+    with a credit transaction involving the consumer
+(c) For employment purposes
+(d) In connection with the underwriting of insurance
+(e) In connection with a legitimate business need in connection with a consumer-initiated
+    business transaction
+
+AI SYSTEMS AND FCRA APPLICABILITY
+
+When an AI/ML system uses consumer data to make matching recommendations that affect
+access to financial services or advisors, FCRA principles apply:
+
+1. Accuracy: The AI system must produce accurate results. Models must be regularly
+   validated to ensure prediction accuracy.
+
+2. Relevancy: Input features used by the model must be relevant to the legitimate
+   purpose of the matching decision.
+
+3. Adverse Action Requirements: When a consumer is denied a service or receives a
+   less favorable outcome based on model output, the consumer must receive:
+   - Written notice of the adverse action
+   - The name and contact information of the model/agency
+   - A statement that the decision was based on model output
+   - The consumer's right to request a free copy of their report/model inputs
+   - The consumer's right to dispute inaccurate information
+
+SECTION 615: REQUIREMENTS ON USERS OF CONSUMER REPORTS
+
+Any person who takes any adverse action with respect to any consumer that is based
+in whole or in part on any information contained in a consumer report shall:
+(1) Provide oral, written, or electronic notice of the adverse action to the consumer
+(2) Provide to the consumer the name, address, and telephone number of the consumer
+    reporting agency that furnished the report
+(3) Provide the consumer with a written or electronic disclosure of:
+    (A) a statement that the consumer reporting agency did not make the decision to
+        take the adverse action and is unable to provide the consumer the specific
+        reasons why the adverse action was taken
+    (B) the consumer's right to obtain, under section 612, a free copy of a consumer
+        report on the consumer from the consumer reporting agency
+    (C) the consumer's right to dispute, under section 611, with a consumer reporting
+        agency the accuracy or completeness of any information in a consumer report
+
+AI-SPECIFIC ADVERSE ACTION REQUIREMENTS
+
+For AI/ML-driven adverse actions:
+- The explanation must identify the principal reasons (typically top 3-4 SHAP features)
+- Reasons must be specific enough to allow the consumer to take remedial action
+- Generic reasons such as "model score too low" are insufficient
+- The explanation should be in plain language understandable to a lay person
+
+SECTION 616: CIVIL LIABILITY FOR WILLFUL NONCOMPLIANCE
+
+Any person who willfully fails to comply with any requirement imposed under this title
+with respect to any consumer is liable to that consumer for:
+(1) any actual damages sustained by the consumer as a result of the failure
+(2) such amount of punitive damages as the court may allow
+(3) in the case of any successful action to enforce any liability, the costs of the
+    action together with reasonable attorney's fees

@@ -1,0 +1,87 @@
+REGULATION B — EQUAL CREDIT OPPORTUNITY ACT
+12 CFR Part 202 — Relevant Provisions for AI/ML Financial Services
+
+PURPOSE
+
+Regulation B prohibits creditors from discriminating against credit applicants on the
+basis of race, color, religion, national origin, sex, marital status, age (provided
+the applicant has the capacity to contract), because all or part of the applicant's
+income derives from any public assistance program, or because the applicant has in good
+faith exercised any right under the Consumer Credit Protection Act.
+
+SECTION 202.4: GENERAL RULES
+
+(a) Discrimination. A creditor shall not discriminate against an applicant on a prohibited
+    basis regarding any aspect of a credit transaction.
+
+(b) Discouragement. A creditor shall not make any oral or written statement, in advertising
+    or otherwise, to applicants or prospective applicants that would discourage on a
+    prohibited basis a reasonable person from making or pursuing an application.
+
+SECTION 202.9: NOTIFICATIONS
+
+(a) Notification of action taken, ECOA notice, and statement of specific reasons.
+
+(1) A creditor shall notify an applicant of action taken within:
+    (i) 30 days after receiving a completed application concerning the creditor's
+        approval of, counteroffer to, or adverse action on the application
+    (ii) 30 days after taking adverse action on an incomplete application
+
+(2) Content of notification when adverse action is taken. A notification given to an
+    applicant when adverse action is taken shall be in writing and shall contain:
+    (i) A statement of the action taken
+    (ii) The name and address of the creditor
+    (iii) A statement of the provisions of section 701(a) of the Act
+    (iv) The name and address of the Federal agency that administers compliance with
+         respect to the creditor
+    (v) Either:
+        (A) A statement of specific reasons for the action taken, or
+        (B) A disclosure of the applicant's right to a statement of specific reasons
+
+AI/ML MODEL SPECIFIC REQUIREMENTS UNDER REGULATION B
+
+For adverse action taken based on AI/ML model outputs:
+
+1. Specific Reasons Requirement: Financial institutions must be able to provide specific
+   reasons for adverse actions taken by AI/ML models. "Model decision" alone is not
+   sufficient — the institution must be able to articulate the principal factors driving
+   the model's output.
+
+2. CFPB Guidance on AI Adverse Action (2023):
+   - Institutions may use SHAP values or similar explainability methods to identify
+     the principal reasons for an adverse action
+   - The reasons provided must be accurate reflections of the model's actual decision
+     factors, not post-hoc rationalizations
+   - Institutions must validate that their explainability methodology actually explains
+     the model's behavior
+
+3. Protected Characteristics:
+   Models must not use the following as input features (directly or as proxies):
+   - Race, color, religion, national origin
+   - Sex or gender
+   - Marital status
+   - Age (except as legally permitted)
+   - Receipt of income from public assistance programs
+
+4. Proxy Discrimination:
+   Even features that appear neutral may constitute illegal discrimination if they
+   serve as proxies for protected characteristics. Regular disparate impact testing
+   is required.
+
+SECTION 202.11: RELATION TO STATE LAW
+
+This regulation does not annul, alter, or affect, or exempt any person subject to the
+provisions of this regulation from complying with, the laws of any State with respect
+to credit discrimination, except to the extent that those laws are inconsistent with
+any provision of the Equal Credit Opportunity Act or this regulation, and then only to
+the extent of the inconsistency.
+
+DOCUMENTATION REQUIREMENTS FOR AI SYSTEMS
+
+Financial institutions using AI/ML for credit-related decisions must document:
+- Training data composition and known demographic distributions
+- Feature selection rationale (demonstrating relevance to legitimate credit factors)
+- Regular disparate impact testing results across all protected classes
+- Explainability methodology and validation that it accurately reflects model behavior
+- Process for providing adverse action notices based on model outputs
+- Consumer complaint handling for AI-driven decisions

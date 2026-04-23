@@ -1,0 +1,12 @@
+apiVersion: v2
+name: sentinel
+description: Continuous AI audit and red-teaming platform for financial advisory services
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
+keywords:
+  - ai-audit
+  - fairness
+  - red-team
+  - financial-services
+  - compliance

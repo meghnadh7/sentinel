@@ -1,0 +1,37 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: {{ .Release.Name }}-fairness-audit
+spec:
+  schedule: "0 * * * *"  # Hourly
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+            - name: fairness-audit
+              image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+              command: ["python", "-m", "sentinel.agents.crew", "model-advisor-v2"]
+              envFrom:
+                - secretRef:
+                    name: {{ .Release.Name }}-secrets
+          restartPolicy: OnFailure
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: {{ .Release.Name }}-chain-verify
+spec:
+  schedule: "*/30 * * * *"  # Every 30 minutes
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+            - name: chain-verify
+              image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+              command: ["python", "scripts/verify_audit_chain.py"]
+              envFrom:
+                - secretRef:
+                    name: {{ .Release.Name }}-secrets
+          restartPolicy: OnFailure

@@ -1,0 +1,136 @@
+SR 11-7: Guidance on Model Risk Management
+Federal Reserve Board and OCC — April 4, 2011
+
+SECTION 1: PURPOSE AND SCOPE
+
+This guidance addresses supervisory expectations for a sound model risk management framework.
+It applies to all financial institutions and covers all models used for decision-making,
+particularly those used in consumer-facing financial services.
+
+SECTION 2: DEFINITION OF MODEL
+
+A model is defined as a quantitative method, system, or approach that applies statistical,
+economic, financial, or mathematical theories, techniques, and assumptions to process
+input data into quantitative estimates. Models are used to identify, measure, monitor,
+and control risk exposure.
+
+SECTION 3: MODEL RISK
+
+Model risk occurs primarily for two reasons:
+1. A model may have fundamental errors and produce inaccurate outputs when viewed against
+   the design objective and intended business uses.
+2. A model may be used incorrectly or inappropriately.
+
+SECTION 4: MODEL DEVELOPMENT, IMPLEMENTATION, AND USE
+
+4.1 Documentation Requirements
+Banks should have documentation sufficient to allow parties unfamiliar with a model to
+understand its overall structure and theory, the data used to develop and test the model,
+the mathematical calculations performed, the assumptions relied upon, the limitations
+identified, and the circumstances under which the model may not perform well.
+
+Documentation should include:
+- Purpose and intended use of the model
+- Theoretical basis and mathematical framework
+- Data sources, transformations, and quality controls
+- Validation methodology and results
+- Key assumptions and their justification
+- Known limitations and compensating controls
+- Approval chain and governance records
+- Model performance benchmarks and acceptance criteria
+
+4.2 Model Validation Requirements
+Model validation is the set of processes and activities intended to verify that models
+are performing as expected, in line with their design objectives and business uses.
+Effective validation addresses three core elements:
+(a) Evaluation of conceptual soundness
+(b) Ongoing monitoring
+(c) Outcomes analysis
+
+4.3 Validation Independence
+Model validation should be conducted by staff who are independent of the model
+development process. The validation function should have appropriate authority to
+challenge model developers and users.
+
+SECTION 5: GOVERNANCE, POLICIES AND CONTROLS
+
+5.1 Board and Senior Management Oversight
+Banks should have board-level oversight of model risk, with senior management responsible
+for ensuring model risk is appropriately managed. The board should understand the
+institution's model risk exposure and approve policies for model risk management.
+
+5.2 Model Inventory
+Banks should maintain a comprehensive inventory of models in use, including:
+- Model purpose and business use
+- Risk tier classification (I through IV based on materiality and consumer impact)
+- Validation status
+- Owner and primary contact
+- Date of last validation
+- Known limitations
+
+5.3 Risk Tiering
+Models should be classified by risk tier:
+- Tier I: Low risk — internal operational models, limited financial impact
+- Tier II: Moderate risk — consumer-facing matching and recommendation models
+- Tier III: High risk — agentic AI systems, autonomous decision-making
+- Tier IV: Critical risk — systemic risk models, capital calculation models
+
+SECTION 6: VENDOR AND THIRD-PARTY MODELS
+
+Banks that use vendor models should apply the same rigor of validation and oversight
+as internally developed models. The bank remains fully responsible for model risk
+management regardless of model source.
+
+SECTION 7: AI AND MACHINE LEARNING MODELS
+
+7.1 Applicability
+This guidance applies fully to AI/ML models including:
+- Supervised learning models for classification and regression
+- Unsupervised learning models for clustering and anomaly detection
+- Natural language processing models for document analysis
+- Generative AI and large language models used in advisory contexts
+- RAG (Retrieval-Augmented Generation) systems
+
+7.2 Special Considerations for AI/ML
+- Explainability: AI/ML models must be capable of providing explanations for their
+  outputs in terms understandable to the affected consumer
+- Fairness: Models used in consumer-facing decisions must be evaluated for disparate
+  impact across protected classes
+- Adversarial robustness: Models should be tested against adversarial inputs
+- Concept drift: Ongoing monitoring must include detection of model drift
+
+7.3 Documentation for AI/ML Models
+In addition to standard documentation requirements, AI/ML models require:
+- Training data description including demographic composition
+- Fairness evaluation methodology and results
+- Explainability approach (e.g., SHAP, LIME, attention weights)
+- Red team / adversarial testing results
+- Drift monitoring approach
+
+SECTION 8: CONSUMER PROTECTION REQUIREMENTS
+
+For models that affect consumer financial decisions:
+- Results must be explainable to the affected consumer
+- Adverse action notices must include specific, accurate reasons
+- Disparate impact must be regularly evaluated and documented
+- FCRA / Equal Credit Opportunity Act requirements apply
+
+SECTION 9: ONGOING MONITORING
+
+9.1 Frequency
+- High-risk models (Tier III and IV): monthly or upon significant market events
+- Moderate-risk models (Tier II): quarterly
+- Low-risk models (Tier I): semi-annually
+
+9.2 Triggers for Off-Cycle Validation
+- Significant change in model performance metrics
+- Material change in model inputs or outputs
+- Changes in the business environment affecting model assumptions
+- Discovery of model errors or material limitations
+- Regulatory or legal changes affecting model use
+
+9.3 Performance Benchmarks
+For fairness monitoring:
+- Demographic Parity Ratio must remain above 0.80
+- Equalized Odds Difference must remain below 0.10
+- Disparate Impact Ratio must remain above 0.80

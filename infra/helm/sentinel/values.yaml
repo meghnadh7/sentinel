@@ -1,0 +1,48 @@
+replicaCount: 2
+
+image:
+  repository: sentinel-api
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 8000
+  metricsPort: 8001
+
+resources:
+  requests:
+    cpu: "500m"
+    memory: "1Gi"
+  limits:
+    cpu: "2"
+    memory: "4Gi"
+
+env:
+  ENVIRONMENT: production
+  MYSQL_HOST: ""
+  MYSQL_PORT: "3306"
+  MYSQL_DATABASE: sentinel_db
+  REDIS_URL: ""
+  MLFLOW_TRACKING_URI: ""
+  USE_LOCAL_EMBEDDINGS: "false"
+  API_HOST: "0.0.0.0"
+  API_PORT: "8000"
+
+secrets:
+  anthropicApiKey: ""
+  openaiApiKey: ""
+  mysqlPassword: ""
+  slackWebhookUrl: ""
+  awsAccessKeyId: ""
+  awsSecretAccessKey: ""
+
+autoscaling:
+  enabled: true
+  minReplicas: 2
+  maxReplicas: 6
+  targetCPUUtilizationPercentage: 70
+
+ingress:
+  enabled: false
+  host: sentinel.internal

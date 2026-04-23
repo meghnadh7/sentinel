@@ -1,0 +1,42 @@
+{
+  "name": "sentinel-documenter",
+  "version": "1.0.0",
+  "role": "Regulatory Compliance Documentation Specialist",
+  "description": "Auto-generates SR 11-7 compliant model cards in JSON-LD and Markdown. Uses LlamaIndex to retrieve regulatory evidence as grounded citations. Targets >90% completeness score.",
+  "capabilities": [
+    "model_card_generation",
+    "nist_ai_rmf_mapping",
+    "completeness_scoring",
+    "regulatory_evidence_retrieval",
+    "json_ld_output",
+    "markdown_output"
+  ],
+  "tools": [
+    "LlamaIndexRAGTool",
+    "ModelCardGeneratorTool",
+    "MySQLWriteTool",
+    "CompletenessScoreTool"
+  ],
+  "output_formats": ["JSON-LD", "Markdown"],
+  "required_sections": [
+    "model_purpose",
+    "risk_tier",
+    "training_data_provenance",
+    "fairness_metrics_summary",
+    "red_team_results_summary",
+    "explainability_summary",
+    "approval_chain",
+    "nist_ai_rmf_mapping",
+    "regulatory_citations",
+    "known_limitations"
+  ],
+  "thresholds": {
+    "completeness_score_target": 0.90
+  },
+  "regulatory_framework": ["SR_11-7", "NIST_AI_RMF", "EU_AI_Act_Article_11"],
+  "guardrails": {
+    "max_tool_calls": 10,
+    "grounded_citations_required": true
+  },
+  "schedule": "on_demand_post_audit"
+}

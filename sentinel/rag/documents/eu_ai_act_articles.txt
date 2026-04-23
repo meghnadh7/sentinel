@@ -1,0 +1,176 @@
+EU ARTIFICIAL INTELLIGENCE ACT — ARTICLES 8-15
+Regulation (EU) 2024/1689 — High-Risk AI Systems Requirements
+
+ARTICLE 8: COMPLIANCE WITH REQUIREMENTS
+
+1. High-risk AI systems shall comply with the requirements established in this Chapter.
+
+2. The intended purpose of the high-risk AI system and the risk management system referred
+   to in Article 9 shall be taken into account when ensuring compliance with those requirements.
+
+ARTICLE 9: RISK MANAGEMENT SYSTEM
+
+1. A risk management system shall be established, implemented, documented and maintained
+   in relation to high-risk AI systems.
+
+2. The risk management system shall consist of a continuous iterative process run throughout
+   the entire lifecycle of a high-risk AI system, requiring regular systematic review and updating.
+
+3. The risk management system shall identify and analyse the known and reasonably foreseeable
+   risks that the high-risk AI system can pose to health, safety or fundamental rights when
+   used in accordance with its intended purpose.
+
+4. The risk management process shall consider the effects and possible interactions resulting
+   from the combination of requirements and functions.
+
+5. Risk management measures for high-risk AI systems shall give due consideration to the
+   effects and possible interactions resulting from the combination of requirements.
+
+ARTICLE 10: DATA AND DATA GOVERNANCE
+
+1. High-risk AI systems which make use of techniques involving the training of models with
+   data shall be developed on the basis of training, validation and testing datasets that
+   meet the quality criteria referred to in paragraphs 2 to 5.
+
+2. Training, validation and testing datasets shall be subject to appropriate data governance
+   and management practices. Those practices shall concern in particular:
+   (a) the relevant design choices
+   (b) data collection and the origin of data, and in the case of personal data,
+       the original purpose of the data collection
+   (c) relevant data preparation processing operations, such as annotation, labelling,
+       cleaning, enrichment and aggregation
+   (d) the formulation of relevant assumptions, notably with respect to the information
+       that the data are supposed to measure and represent
+   (e) an assessment of the availability, quantity and suitability of the datasets that
+       are needed
+   (f) examination in view of possible biases, that are likely to affect the health and
+       safety of persons or lead to prohibited discrimination
+   (g) relevant data gaps or shortcomings, and how those gaps and shortcomings are addressed
+
+3. Training, validation and testing datasets shall be relevant, sufficiently representative,
+   and to the best extent possible, free of errors and complete in view of the intended
+   purpose. They shall have the appropriate statistical properties, including, where
+   applicable, as regards the persons or groups of persons in relation to whom the
+   high-risk AI system is intended to be used.
+
+4. Datasets shall take into account, to the extent required by the intended purpose,
+   the characteristics or elements that are particular to the specific geographical,
+   behavioural or functional setting within which the high-risk AI system is intended to be used.
+
+ARTICLE 11: TECHNICAL DOCUMENTATION
+
+1. The technical documentation of a high-risk AI system shall be drawn up before that
+   system is placed on the market or put into service and shall be kept up-to date.
+
+2. The technical documentation shall be drawn up in such a way as to demonstrate that
+   the high-risk AI system complies with the requirements set out in this Chapter and
+   shall provide national competent authorities and notified bodies with all the necessary
+   information to assess the compliance of the AI system with those requirements.
+
+3. The technical documentation shall contain at a minimum the following information:
+   (a) A general description of the AI system including:
+       (i) its intended purpose
+       (ii) the name of the provider and its registered trade name or registered trade mark
+       (iii) the version of the system
+   (b) A description of the elements of the AI system and of the process for its development
+   (c) Detailed information about the monitoring, functioning and control of the AI system
+   (d) A description of the appropriateness of the performance metrics for the specific system
+   (e) A detailed description of the risk management system in accordance with Article 9
+   (f) A description of any change made to the system through its lifecycle
+   (g) A list of the harmonised standards applied
+   (h) A copy of the EU declaration of conformity
+
+ARTICLE 12: RECORD KEEPING
+
+1. High-risk AI systems shall be designed and developed with capabilities enabling the
+   automatic recording of events ('logs') while the high-risk AI systems is operating.
+
+2. In order to ensure a level of traceability of the AI system's functioning throughout
+   its lifecycle that is appropriate to the intended purpose of the system, logging
+   capabilities shall enable the monitoring of the operation of the high-risk AI system
+   with respect to the occurrence of situations that may result in the AI system presenting
+   a risk within the meaning of Article 79(1) or lead to a substantial modification.
+
+3. For high-risk AI systems used in the context of decisions referred to in Article 6(2),
+   the logging capabilities shall ensure, at minimum:
+   (a) recording of the period of each use of the system (start date and time and end
+       date and time of each use)
+   (b) the reference database against which the input data has been checked by the system
+   (c) the input data for which the search has led to a match
+   (d) the identity of the natural persons involved in the verification of results
+
+ARTICLE 13: TRANSPARENCY AND PROVISION OF INFORMATION TO USERS
+
+1. High-risk AI systems shall be designed and developed in such a way as to ensure that
+   their operation is sufficiently transparent to enable deployers to interpret the system's
+   output and use it appropriately.
+
+2. High-risk AI systems shall be accompanied by instructions for use in an appropriate
+   digital format or otherwise that include concise, complete, correct and clear information
+   that is relevant, accessible and comprehensible to deployers.
+
+3. The information shall specify:
+   (a) the identity and the contact details of the provider and, where applicable, of its
+       authorised representative
+   (b) the characteristics, capabilities and limitations of performance of the high-risk
+       AI system, including:
+       (i) its intended purpose
+       (ii) the level of accuracy, including its metrics, robustness and cybersecurity
+            referred to in Article 15 against which the high-risk AI system has been
+            tested and validated and which can be expected
+       (iii) any known or foreseeable circumstance, related to the use of the high-risk
+             AI system in accordance with its intended purpose or under conditions of
+             reasonably foreseeable misuse, which may lead to risks to the health and
+             safety or fundamental rights referred to in Article 9(2)
+       (iv) its performance as regards the persons or groups of persons on which the
+            system is intended to be used
+       (v) when appropriate, specifications for the input data, or any other relevant
+           information in terms of the training, validation and testing datasets used
+
+ARTICLE 14: HUMAN OVERSIGHT
+
+1. High-risk AI systems shall be designed and developed in such a way, including with
+   appropriate human-machine interface tools, that they can be effectively overseen by
+   natural persons during the period in which the AI system is in use.
+
+2. Human oversight shall aim at preventing or minimising the risks to health, safety or
+   fundamental rights that may emerge when a high-risk AI system is used in accordance with
+   its intended purpose or under conditions of reasonably foreseeable misuse.
+
+3. Human oversight measures shall be proportionate to the risks, level of autonomy and
+   context of use of the AI system, and shall be ensured by either one or all of the
+   following measures:
+   (a) identified and built, where technically feasible, into the high-risk AI system
+       by the provider before it is placed on the market or put into service
+   (b) identified by the provider before placing the high-risk AI system on the market or
+       putting it into service and that are appropriate to be implemented by the deployer
+
+ARTICLE 15: ACCURACY, ROBUSTNESS AND CYBERSECURITY
+
+1. High-risk AI systems shall be designed and developed in such a way that they achieve,
+   in the light of their intended purpose, an appropriate level of accuracy, robustness and
+   cybersecurity, and perform consistently in those respects throughout their lifecycle.
+
+2. The levels of accuracy and the relevant accuracy metrics shall be declared in the
+   accompanying instructions of use.
+
+3. High-risk AI systems shall be resilient as regards errors, faults or inconsistencies
+   that may occur within the system or the environment in which the system operates,
+   in particular due to their interaction with natural persons or other AI systems.
+
+4. The technical robustness of high-risk AI systems may be achieved through technical
+   redundancy solutions, which may include backup or fail-safe plans.
+
+5. High-risk AI systems that continue to learn after being placed on the market or put
+   into service shall be developed in such a way to ensure that possibly biased outputs
+   due to outputs used as an input for future operations ('feedback loops') are duly
+   addressed with appropriate mitigation measures.
+
+CLASSIFICATION OF FINANCIAL ADVISORY AI AS HIGH-RISK
+
+Under Annex III of the EU AI Act, AI systems used for:
+- Credit scoring or assessment of creditworthiness
+- Access to financial services or insurance products
+- Matching consumers to financial advisors
+
+Are classified as HIGH-RISK AI systems and are subject to all requirements in Articles 8-15.

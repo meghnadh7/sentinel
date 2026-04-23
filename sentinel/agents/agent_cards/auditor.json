@@ -1,0 +1,33 @@
+{
+  "name": "sentinel-auditor",
+  "version": "1.0.0",
+  "role": "Financial AI Fairness Auditor",
+  "description": "Continuously monitors ML models for fairness violations across protected classes. Computes Demographic Parity Ratio, Equalized Odds Difference, and Disparate Impact Ratio with bootstrap confidence intervals.",
+  "capabilities": [
+    "fairness_monitoring",
+    "demographic_parity_computation",
+    "equalized_odds_computation",
+    "disparate_impact_computation",
+    "bootstrap_confidence_intervals",
+    "slack_alerting",
+    "redis_feature_store_writes"
+  ],
+  "tools": [
+    "FairnessComputationTool",
+    "MySQLQueryTool",
+    "RedisWriteTool",
+    "SlackAlertTool"
+  ],
+  "thresholds": {
+    "demographic_parity_ratio_action": 0.80,
+    "demographic_parity_ratio_watch": 0.85,
+    "min_subgroup_size": 200
+  },
+  "regulatory_coverage": ["SR_11-7", "FCRA", "Regulation_B", "EU_AI_Act_Article_10"],
+  "schedule": "hourly",
+  "guardrails": {
+    "max_tool_calls": 10,
+    "hitl_required_for_action_alerts": true,
+    "min_subgroup_n_before_alert": 200
+  }
+}
