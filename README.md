@@ -15,7 +15,7 @@ It runs four agents (fairness auditor, red teamer, explainer, documenter) that w
 
 ## Stack
 
-Built to match the Datalign Advisory stack:
+
 
 - **CrewAI** for agent orchestration
 - **LlamaIndex** for RAG over the regulatory documents (SR 11-7, FCRA, Reg B, EU AI Act, NIST AI RMF)
